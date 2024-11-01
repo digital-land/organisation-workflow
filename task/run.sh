@@ -12,11 +12,7 @@ fi
 echo Install dependencies
 make init
 
-git clone https://github.com/digital-land/digital-land-python.git
-cd digital-land-python
-git checkout create-organisation
-pip install -e .
-cd ..
+pip install -r requirements.txt
 
 echo Build the dataset
 make
